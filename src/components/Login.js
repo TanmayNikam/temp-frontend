@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 import { validateEmail } from "../utils/helpers";
 import axios from "axios";
@@ -87,6 +87,11 @@ const Login = () => {
                   className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                   Sign In
                 </button>
+              </div>
+              <div className="text-center mt-4">
+                <Link className="mt-3" to="/signup">
+                  Register Here
+                </Link>
               </div>
             </form>
           </div>
